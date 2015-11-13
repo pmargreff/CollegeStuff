@@ -30,12 +30,12 @@ void reset(StaticStack *stack);
 
 /**
  * @param stack- pointer to stack
- * @return 0 - if isn't empty. 1 - if is empty.
+ * @return false - if isn't empty true - if is empty.
  */
 bool empty(StaticStack *stack);
 /**
  * @param stack - pointer to stack
- * @return 0 - if isn't full. 1 - if is full.
+ * @return false - if isn't full true - if is full.
  */
 bool full(StaticStack *stack);
 
@@ -49,7 +49,7 @@ bool push(StaticStack *stack, Data newData);
 /**
  * @param stack- pointer to stack
  * @param data - pointer to data structure
- * @return  - 0 - if doesn't pop.  1 - if do pop with success
+ * @return  - false - if doesn't pop.  true - if do pop with success
  */
 bool pop(StaticStack *stack, Data *data);
 
